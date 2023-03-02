@@ -15,6 +15,9 @@ const ProductSchema = new mongoose.Schema({
         required : [true, "{PATH} is required"],
         minlength: [5, "{PATH} must be at least {MINLENGTH} characters"]
     },
+    img: {
+        data: Buffer
+    }
 }, {timestamps: true}); // adds createdAt and updatedAt.
 
 
