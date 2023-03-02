@@ -2,6 +2,8 @@ import './App.css';
 import logo from '../src/images/logo.png'
 import background from '../src/images/background.jpg'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import {Route, Routes} from 'react-router-dom'
+
 
 function App() {
   return (
@@ -17,7 +19,11 @@ function App() {
             <button className='btn btn-warning'>All Products</button>
           </div>
         </div>
-
+        <Routes>
+          <Route path='/products' element={<AllProducts/>}></Route>
+          <Route></Route>
+          <Route></Route>
+        </Routes>
       </div>
     </div>
   );
